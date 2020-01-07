@@ -150,12 +150,12 @@ body {
 	font-size: 1.6em;
 }
 
-div h1{
+h1{
 	/* 68px */
-	font-size: 6.8rem;
-	margin: 1rem 0;
+	font-size: 3.8rem;
+	margin: 2rem 0;
 }
-div a{
+a{
 	/* 38px */
 	font-size: 3.8rem;
 
