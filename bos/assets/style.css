@@ -252,7 +252,7 @@ z-index: 1;
 /* 560px未満(スマホ設定) */
 @media screen and (max-width: 559px) {
 	html {
-	font-size: 20.5%;
+	font-size: 40.5%;
 	color: red;
 }
 }
