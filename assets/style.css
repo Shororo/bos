@@ -178,8 +178,6 @@ a{
   background-color: black;
 }
 img{
-  object-fit: cover;
-  width: 100%;
 }
 .img-padding{
   padding:30px;
@@ -212,6 +210,7 @@ img{
 .title img{
 	height:85vh;
 	width: 100vw;
+  object-fit: cover;
 }
 .kyozon{
   font-size: 6vmax;
@@ -303,6 +302,5 @@ img{
 @media screen and (max-width: 544px) {
 	html {
    font-size: 45.5%;
-   color: red;
  }
 }
