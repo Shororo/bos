@@ -187,6 +187,10 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
+.text-padding{
+  padding-right:15px;
+  padding-left: 15px;
+}
 
 /* 共通ここまで */
 
