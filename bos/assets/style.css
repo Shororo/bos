@@ -18,87 +18,87 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    vertical-align:baseline;
-    background:transparent;
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
 }
 
 
 body {
-    line-height:1;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Noto Serif JP', serif;
+  line-height:1;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif JP', serif;
 }
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
-    display:block;
+  display:block;
 }
 
 nav ul {
-    list-style:none;
+  list-style:none;
 }
 
 blockquote, q {
-    quotes:none;
+  quotes:none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+  content:'';
+  content:none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    vertical-align:baseline;
-    background:transparent;
-    text-decoration: none;
-    color:black;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  color:black;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+  border-bottom:1px dotted;
+  cursor:help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse:collapse;
+  border-spacing:0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:0 0;
-    padding:0;
-    border: 0;
+  display:block;
+  height:1px;
+  border:0;  
+  border-top:1px solid #cccccc;
+  margin:0 0;
+  padding:0;
+  border: 0;
 }
 
 /* form要素のcss全リセット */
@@ -141,8 +141,8 @@ select::-ms-expand {
 
 /* font-sizeレスポンシブ */
 html {
-    /* ルートのフォントサイズを10pxに設定しておく */
-	font-size: 62.5%;
+  /* ルートのフォントサイズを10pxに設定しておく */
+  font-size: 62.5%;
 }
 
 body {
@@ -165,8 +165,29 @@ a{
 /* 共通 */
 /* 影つけたい時用 */
 .shadow{
-    filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.7));
+  filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.7));
 }
+.div-padding{
+  padding: 6rem 0;
+}
+.text-center{
+  text-align: center;
+  line-height:2.5;
+}
+.black{
+  background-color: black;
+}
+img{
+  object-fit: cover;
+}
+.img-padding{
+  padding:30px;
+}
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* 共通ここまで */
 
 /* 画面TOPここから */
@@ -175,50 +196,42 @@ a{
 	position:relative;
 }
 .title:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 85vh;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, #fff 90%);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 85vh;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, #fff 90%);
 }
 .title img{
 	height:85vh;
 	width: 100vw;
-	object-fit: cover;
 }
 .kyozon{
-		font-size: 6vmax;
-		position: absolute;
-    top: 70%;
-    left: 63%;
-    color: #9e9e9e82;
-    transform: translate(-50%,-50%);
+  font-size: 6vmax;
+  position: absolute;
+  top: 70%;
+  left: 65.5%;
+  color: #9e9e9e82;
+  transform: translate(-50%,-50%);
 }
 /* 画面TOPここまで */
 
 /* openingここから */
-.opening{
-	padding: 30px 0;
-}
-
-.text-center{
-	text-align: center;
-	line-height:2.5;
-}
 .about{
 	color: white;
 	position: relative;
-	background: url(../image/member01.jpg);
-	width:100%;
-  background-size: cover;
+  /* 背景画像を中心にアス比を変えずに配置する方法 */
+	background: url(../image/member01.jpg) no-repeat center center;
+	  background-size: cover;
+  width:100%;
   height: 500px;
 }
 /* 背景画像を暗くする */
 .about::before{
   /* 透過した黒を上から重ねるイメージ */
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.8);
   /* 自由に位置指定 */
   position: absolute;
   top: 0;
@@ -229,33 +242,62 @@ a{
 }
 
 .about-text{
-position: absolute;
-top:50%;
-width: 100%;
-z-index: 1;
+  position: absolute;
+  top:50%;
+  width: 100%;
+  z-index: 1;
   transform : translateY(-50%);
 }
-
+.disc1{
+  background-color: black;
+  color: white;
+}
+.disc2{
+ 
+}
+.disc3{
+  background-color: black;
+  color: white;
+}
+.disc4{
+}
+.epilogue{
+  background-color: black;
+  color: white;
+}
 /* 画面TOPレスポンシブ対応 */
 @media screen and (max-width: 600px){
-.kyozon{
+  .kyozon{
     position: absolute;
     top: 60%;
     left: 63%;
     color: #9e9e9e82;
     transform: translate(-50%,-50%);
-	}
+  }
 }
 /* 960px未満(タブレット設定) */
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
+    .kyozon{
+    position: absolute;
+    top: 60%;
+    left: 51.5%;
+    color: #9e9e9e82;
+    transform: translate(-50%,-50%);
+  }
 	html {
-	font-size: 62.5%;
-}
+   font-size: 54.5%;
+ }
+ .order1{
+  order:1;
+ }
+ .order2{
+  order:2;
+ }
 }
 /* 560px未満(スマホ設定) */
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 544px) {
 	html {
-	font-size: 45.5%;
-	color: red;
-}
+   font-size: 45.5%;
+   color: red;
+ }
 }
