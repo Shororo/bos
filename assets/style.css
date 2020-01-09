@@ -174,8 +174,11 @@ a{
   text-align: center;
   line-height:2.5;
 }
-.black{
+.b-black{
   background-color: black;
+}
+.b-white{
+	background-color:white;
 }
 img{
 }
@@ -190,7 +193,18 @@ img{
   padding-right:15px;
   padding-left: 15px;
 }
-
+.z-10{
+position:relative;
+	z-index:10;
+}
+.back{
+	position:relative;
+	z-index:0;
+}
+.back-100vh{
+	width:100%;
+	height:100vh;
+}
 /* 共通ここまで */
 
 /* 画面TOPここから */
@@ -204,13 +218,16 @@ img{
   top: 0;
   left: 0;
   width: 100vw;
-  height: 85vh;
+  height: 105vh;
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, #fff 90%);
 }
 .title img{
-	height:85vh;
+	height:100vh;
 	width: 100vw;
   object-fit: cover;
+}
+.title-text{
+	background-color:white;
 }
 .kyozon{
   font-size: 6vmax;
@@ -225,12 +242,13 @@ img{
 /* openingここから */
 .about{
 	color: white;
-	position: relative;
+	position: fixed;
+	bottom:0;
   /* 背景画像を中心にアス比を変えずに配置する方法 */
 	background: url(../image/member01.jpg) no-repeat center center;
 	  background-size: cover;
   width:100%;
-  height: 500px;
+  height: 100vh;
 }
 /* 背景画像を暗くする */
 .about::before{
@@ -253,20 +271,16 @@ img{
   transform : translateY(-50%);
 }
 .disc1{
-  background-color: black;
   color: white;
 }
 .disc2{
- 
 }
 .disc3{
-  background-color: black;
   color: white;
 }
 .disc4{
 }
 .epilogue{
-  background-color: black;
   color: white;
 }
 /* 画面TOPレスポンシブ対応 */
